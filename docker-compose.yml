@@ -22,7 +22,7 @@ services:
       - app-network
 
   zookeeper:
-    image: bitnami/zookeeper:latest
+    image: soldevelo/zookeeper:latest
     container_name: zookeeper
     restart: always
     environment:
@@ -35,7 +35,7 @@ services:
       - app-network
 
   kafka:
-    image: public.ecr.aws/bitnami/kafka:3.5.1
+    image: soldevelo/kafka:3.5.2
     ports:
       - "9094:9094"
     volumes:
